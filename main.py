@@ -2,12 +2,12 @@ import PySimpleGUI as sg
 
 def create_window(theme):
 	sg.theme(theme)
-	sg.set_options(font = 'Franklin 14', button_element_size = (6,3))
+	sg.set_options(font = 'Arial 14', button_element_size = (6,3))
 	button_size = (6,3)
 	layout = [
 		[sg.Text(
 			'', 
-			font = 'Franklin 26', 
+			font = 'Arial 26', 
 			justification = 'right', 
 			expand_x = True, 
 			pad = (10,20),
@@ -23,8 +23,8 @@ def create_window(theme):
 
 	return sg.Window('Calculator', layout)
 
-theme_menu = ['menu',['LightGrey1','dark','DarkGray8','random']]
-window = create_window('dark')
+theme_menu = ['menu',['LightGrey1','Darkblue9','DarkGray8','random']]
+window = create_window('DarkBlue9')
 
 current_num = []
 full_operation = []
