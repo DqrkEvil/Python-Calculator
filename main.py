@@ -53,6 +53,7 @@ while True:
 		full_operation.append(''.join(current_num))
 		result = eval(' '.join(full_operation))
 		window['-TEXT-'].update(result)
+		current_num = full_operation
 		full_operation = []
 
 	if event == 'Clear':
